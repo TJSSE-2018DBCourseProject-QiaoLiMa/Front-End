@@ -8,6 +8,8 @@ _______
 
 #设计
 
+开放两个前端应用（客户和管理员），用户系统管理登陆状态并与决定请求哪一个应用
+
 ###客户框架
 
 + 主页
@@ -47,6 +49,22 @@ _____
 _____
 
 ______
+
+# 素材
+
+UI框架：element-angular 
+
+###icon
+
+框架自带icon：https://element-angular.faas.ele.me/basic/icon
+
+第三方icon：http://www.iconfont.cn/collections/index?spm=a313x.7781069.1998910419.3&page=1
+
+如何在此框架下使用第三方icon请自行查询教程
+
+______
+
+_______
 
 #其他参考
 
