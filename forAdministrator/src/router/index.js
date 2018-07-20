@@ -28,56 +28,56 @@ export default new Router({
 
                 {
                     path: '/flowStatistics',
-                    component: resolve => require(['../components/page/FlowStatistics.vue'], resolve),
+                    component: resolve => require(['../components/page/statistics/FlowStatistics.vue'], resolve),
                     meta: { title: '站点流量' }
                 },
                 {
                     path: '/attendanceStatistics',
-                    component: resolve => require(['../components/page/AttendanceStatistics.vue'], resolve),
+                    component: resolve => require(['../components/page/statistics/AttendanceStatistics.vue'], resolve),
                     meta: { title: '上座率' }
                 },
                 {
                     path: '/punctualityRateStatistics',
-                    component: resolve => require(['../components/page/PunctualityRateStatistics.vue'], resolve),
+                    component: resolve => require(['../components/page/statistics/PunctualityRateStatistics.vue'], resolve),
                     meta: { title: '准点率' }
                 },
                 {
                     path: '/station',
-                    component: resolve => require(['../components/page/Station.vue'], resolve),
+                    component: resolve => require(['../components/page/station/Station.vue'], resolve),
                     meta: { title: '站点' }
                 },
                 {
                     path: '/train',
-                    component: resolve => require(['../components/page/Train.vue'], resolve),
+                    component: resolve => require(['../components/page/train/Train.vue'], resolve),
                     meta: { title: '列车' }
                 },
                 {
                     path: '/timeTable',
-                    component: resolve => require(['../components/page/TimeTable.vue'], resolve),
+                    component: resolve => require(['../components/page/timeTable/TimeTable.vue'], resolve),
                     meta: { title: '固定时刻表' }
                 },
                 {
                     path: '/dynamicInformationTable',
-                    component: resolve => require(['../components/page/DynamicInformationTable.vue'], resolve),
+                    component: resolve => require(['../components/page/timeTable/DynamicInformationTable.vue'], resolve),
                     meta: { title: '动态信息表' }
                 },
                 {
                     path: '/employee',
-                    component: resolve => require(['../components/page/Employee.vue'], resolve),
+                    component: resolve => require(['../components/page/employee/Employee.vue'], resolve),
                     meta: { title: '员工' }
                 },
                 {
                     path: '/order',
-                    component: resolve => require(['../components/page/Order.vue'], resolve),
+                    component: resolve => require(['../components/page/order/Order.vue'], resolve),
                     meta: { title: '订单' }
                 },
                 {
                     path: '/route',
-                    component: resolve => require(['../components/page/Route.vue'], resolve),
+                    component: resolve => require(['../components/page/route/Route.vue'], resolve),
                     meta: { title: '铁路线' }
                 },{
                     path: '/priceList',
-                    component: resolve => require(['../components/page/PriceList.vue'], resolve),
+                    component: resolve => require(['../components/page/priceList/PriceList.vue'], resolve),
                     meta: { title: '价格表' }
                 },
                 {
