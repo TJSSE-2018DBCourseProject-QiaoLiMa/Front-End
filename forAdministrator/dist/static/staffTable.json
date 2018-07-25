@@ -1,0 +1,17 @@
+{
+    "list": [{
+        "staffID":"ZY1652815",
+        "name":"易烊千玺",
+        "gender":"男",
+        "IDCardNumber":"130982200011289521",
+        "typeOfWork":"列车员",
+        "position":"主驾驶员"
+    },  {
+        "staffID":"ZY1652816",
+        "name":"王源",
+        "gender":"男",
+        "IDCardNumber":"130982200011089521",
+        "typeOfWork":"列车员",
+        "position":"副驾驶员"
+    }]
+}
