@@ -20,6 +20,11 @@ export default new Router({
                     meta: { title: '首页' }
                 },
                 {
+                    path: '/crew',
+                    component: resolve => require(['../components/page/employee/Crew.vue'], resolve),
+                    meta: { title: '乘务组' }
+                },
+                {
                     path: '/me',
                     component: resolve => require(['../components/page/Me.vue'], resolve),
                     meta: { title: '我的信息' }

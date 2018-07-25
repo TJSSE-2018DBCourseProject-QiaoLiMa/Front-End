@@ -96,7 +96,18 @@
                     {
                         icon: 'el-icon-warning',
                         index: 'employee',
-                        title: '员工'
+                        title: '员工',
+                        subs: [
+                            {
+                                index: 'employee',
+                                title: '员工',
+                            },
+                            {
+                                index: 'crew',
+                                title: '乘务组',
+                            }
+                        ]
+
                     },
                     {
                         icon: 'el-icon-error',
