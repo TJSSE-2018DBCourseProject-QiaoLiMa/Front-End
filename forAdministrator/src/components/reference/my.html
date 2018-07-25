@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- import Vue before Element -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!-- import JavaScript -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+<div id="app">
+    <template>
+        <div class="container">
+            <h1>固定时刻表</h1>
+            <div class="form-box">
+                <el-tabs type="border-card">
+                    <el-tab-pane label="添加车次">
+                        <el-form ref="trainNumbers" :model="trainNumbers" label-width="80px" @click="handleTabClick">
+                            <el-form-item label="车次编号">
+                                <el-input v-model="trainNumbers.trainNumber" placeholder="请输入车次编号"></el-input>
+                            </el-form-item>
+                            <el-form-item label="运行方向">
+                                <el-radio-group v-model="trainNumbers.direction">
+                                    <el-radio label="去向"></el-radio>
+                                    <el-radio label="回向"></el-radio>
+                                </el-radio-group>
+                            </el-form-item>
+                            <el-form-item>
+                                <el-button type="primary" @click="onAddSubmit">开始添加</el-button>
+                            </el-form-item>
+                        </el-form>
+                    </el-tab-pane>
+
+                    <el-tab-pane label="删除列车">
+                        <el-form ref="train" :model="train" label-width="80px" @click="handleTabClick">
+                            <el-form-item label="列车ID">
+                                <el-input v-model="train.ID" placeholder="请输入列车ID"></el-input>
+                            </el-form-item>
+                            <el-form-item>
+                                <el-button type="primary" @click="onDeleteSubmit">提交</el-button>
+                            </el-form-item>
+                        </el-form>
+                    </el-tab-pane>
+
+                    <el-tab-pane label="查找列车">
+                        <el-form ref="train" :model="train" label-width="80px" @click="handleTabClick">
+                            <el-form-item label="列车ID">
+                                <el-input v-model="train.ID" placeholder="请输入列车ID"></el-input>
+                            </el-form-item>
+                            <el-form-item>
+                                <el-button type="primary" @click="onSearchSubmit">提交</el-button>
+                            </el-form-item>
+                        </el-form>
+                        <router-view></router-view>
+                    </el-tab-pane>
+
+                    <el-tab-pane label="修改列车">
+                        <el-form ref="train" :model="train" label-width="80px" @click="handleTabClick">
+                            <el-form-item label="列车ID">
+                                <el-input v-model="train.ID" placeholder="请输入列车ID"></el-input>
+                            </el-form-item>
+                            <el-form-item>
+                                <el-button type="primary" @click="onSearchSubmit">提交</el-button>
+                            </el-form-item>
+                        </el-form>
+                    </el-tab-pane>
+                </el-tabs>
+            </div>
+        </div>
+    </template>
+</div>
+
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                trainNumbers: {
+                    trainNumber: "G2318",
+                    type: 0,
+                    direction: 0
+                },
+                carriages: [{
+                    ID: "1",
+                    carriageFreightType: "客运",
+                    freightCapacity: 120,
+                    passengerCapacity: 120,
+                    carriageRunningSituation: "运营中",
+                    belongingTrain: "G2318",
+                    carriageCarryingSituation: 0
+                },{
+                    ID: "2",
+                    carriageFreightType: "客运",
+                    freightCapacity: 120,
+                    passengerCapacity: 120,
+                    carriageRunningSituation: "运营中",
+                    belongingTrain: "G2318",
+                    carriageCarryingSituation: 0
+                }],
+            }
+        },
+        methods: {
+            onEditCarriage(index, row) {//修改列车
+                console.log(index,row);
+            }，
+
+        }
+    })
+</script>
+</body>
+</html>

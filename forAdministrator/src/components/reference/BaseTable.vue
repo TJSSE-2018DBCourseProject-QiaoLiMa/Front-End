@@ -15,7 +15,6 @@
                 <el-input v-model="select_word" placeholder="筛选关键词" class="handle-input mr10"></el-input>
                 <el-button type="primary" icon="search" @click="search">搜索</el-button>
             </div>
-
             <el-table :data="data" border style="width: 100%" ref="multipleTable" @selection-change="handleSelectionChange">
                 <el-table-column type="selection" width="55"></el-table-column>
                 <el-table-column prop="date" label="日期" sortable width="150">
@@ -31,7 +30,6 @@
                     </template>
                 </el-table-column>
             </el-table>
-
             <div class="pagination">
                 <el-pagination @current-change="handleCurrentChange" layout="prev, pager, next" :total="1000">
                 </el-pagination>
@@ -127,7 +125,7 @@
                 // 开发环境使用 easy-mock 数据，正式环境使用 json 文件
                 if (process.env.NODE_ENV === 'development') {
                     this.url = '/ms/table/list';
-                }
+                };
                 this.$axios.post(this.url, {
                     page: this.cur_page
                 }).then((res) => {
@@ -150,7 +148,7 @@
                     name: item.name,
                     date: item.date,
                     address: item.address
-                };
+                }
                 this.editVisible = true;
             },
             handleDelete(index, row) {
