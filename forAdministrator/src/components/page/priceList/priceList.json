@@ -1,0 +1,10 @@
+{
+  "list": [
+      {
+          "trainType":"高铁",
+          "seatType":"二等座",
+          "accountType":"成人",
+          "costPerKm":0.38
+  }
+  ]
+}

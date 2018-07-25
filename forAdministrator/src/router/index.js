@@ -24,7 +24,11 @@ export default new Router({
                     component: resolve => require(['../components/page/Me.vue'], resolve),
                     meta: { title: '我的信息' }
                 },
-
+                {
+                    path: '/user',
+                    component: resolve => require(['../components/page/User.vue'], resolve),
+                    meta: { title: '个人信息' }
+                },
 
                 {
                     path: '/flowStatistics',
@@ -67,9 +71,19 @@ export default new Router({
                     meta: { title: '员工' }
                 },
                 {
+                    path: '/crew',
+                    component: resolve => require(['../components/page/employee/Crew.vue'], resolve),
+                    meta: { title: '乘务组' }
+                },
+                {
                     path: '/order',
                     component: resolve => require(['../components/page/order/Order.vue'], resolve),
-                    meta: { title: '订单' }
+                    meta: { title: '客运订单' }
+                },
+                {
+                    path: '/freightOrder',
+                    component: resolve => require(['../components/page/order/FreightOrder.vue'], resolve),
+                    meta: { title: '货运订单' }
                 },
                 {
                     path: '/route',
@@ -78,7 +92,12 @@ export default new Router({
                 },{
                     path: '/priceList',
                     component: resolve => require(['../components/page/priceList/PriceList.vue'], resolve),
-                    meta: { title: '价格表' }
+                    meta: { title: '客运价格表' }
+                },
+                {
+                    path: '/freightpriceList',
+                    component: resolve => require(['../components/page/priceList/FreightPriceList.vue'], resolve),
+                    meta: { title: '货运价格表' }
                 },
                 {
                     path: '/dashboard2',
@@ -141,6 +160,10 @@ export default new Router({
         {
             path: '/login',
             component: resolve => require(['../components/page/Login.vue'], resolve)
+        },
+        {
+            path: '/register',
+            component: resolve => require(['../components/page/Register.vue'], resolve)
         },
         {
             path: '/404',
