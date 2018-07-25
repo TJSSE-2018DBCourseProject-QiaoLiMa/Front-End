@@ -1,0 +1,20 @@
+[
+	{
+		"ID": "1",
+		"carriageFreightType": 0,
+		"freightCapacity": 120,
+		"passengerCapacity": 120,
+		"carriageRunningSituation": 0,
+		"belongingTrain": "G2318",
+		"carriageCarryingSituation": 10
+	},
+	{
+		"ID": "2",
+		"carriageFreightType": 0,
+		"freightCapacity": 9837,
+		"passengerCapacity": 9837,
+		"carriageRunningSituation": 0,
+		"belongingTrain": "G2318",
+		"carriageCarryingSituation": 10
+	}
+]

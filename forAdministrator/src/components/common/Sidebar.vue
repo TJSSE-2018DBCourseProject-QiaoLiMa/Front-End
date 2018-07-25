@@ -91,47 +91,17 @@
                     {
                         icon: 'el-icon-rank',
                         index: 'priceList',
-                        title: '价格表',
-                        subs: [
-                            {
-                                index: 'priceList',
-                                title: '  客运价格表'
-                            },
-                            {
-                                index: 'freightPriceList',
-                                title: '  货运价格表'
-                            }
-                        ]
+                        title: '价格表'
                     },
                     {
                         icon: 'el-icon-warning',
                         index: 'employee',
-                        title: '人事',
-                        subs: [
-                            {
-                                index: 'employee',
-                                title: '  员工管理'
-                            },
-                            {
-                                index: 'crew',
-                                title: '  乘务组管理'
-                            }
-                        ]
+                        title: '员工'
                     },
                     {
                         icon: 'el-icon-error',
                         index: 'order',
-                        title: '订单',
-                        subs: [
-                            {
-                                index: 'order',
-                                title: '  客运订单'
-                            },
-                            {
-                                index: 'freightOrder',
-                                title: '  货运订单'
-                            }
-                        ]
+                        title: '订单'
                     },
                     {
                         icon: 'el-icon-error',
